@@ -1,0 +1,406 @@
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-none {
+    float: none;
+}
+
+
+/*關*/
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    display: block;
+    content: ".";
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.word-break {
+    word-break: break-all;
+}
+
+// 區塊設定
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.none {
+    display: none;
+}
+
+// image width
+.img-40 {
+    img {
+        display: inline-block;
+        width: 40% !important;
+        height: auto !important;
+        font-size: 0;
+    }
+}
+
+.img-60 {
+    img {
+        display: inline-block;
+        width: 60% !important;
+        height: auto !important;
+        font-size: 0;
+    }
+}
+
+.img-80 {
+    img {
+        display: inline-block;
+        width: 80% !important;
+        height: auto !important;
+        font-size: 0;
+    }
+}
+
+.img-90 {
+    img {
+        display: inline-block;
+        width: 100% !important;
+        height: auto !important;
+        font-size: 0;
+    }
+}
+
+.img-100 {
+    img {
+        display: inline-block;
+        width: 100% !important;
+        height: auto !important;
+        font-size: 0;
+    }
+}
+
+.fz0 {
+    font-size: 0;
+}
+
+// .visibility-visible{
+//   visibility: visible;
+// }
+// .visibility-hidden{
+//   visibility: hidden;
+// }
+
+/*方框對其自動center*/
+
+// margin系
+.mg-auto {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mg-tb {
+    margin-top: $space;
+    margin-bottom: $space;
+}
+
+.mg-0 {
+    margin: 0;
+}
+
+.mg-t {
+    margin-top: $space;
+}
+
+.mg-b {
+    margin-bottom: $space;
+}
+
+.mg-b-2 {
+    margin-bottom: $space*2;
+}
+
+.mg-b-3 {
+    margin-bottom: $space*2;
+}
+
+.mg-b-4 {
+    margin-bottom: $space*4;
+}
+
+// padding系
+.pd-l-0 {
+    padding-left: 0;
+}
+
+.pd-l {
+    padding-left: $space;
+}
+
+.pd-l-2 {
+    padding-left: $space*2;
+}
+
+.pd-l-3 {
+    padding-left: $space*3;
+}
+
+.pd-t {
+    padding-top: $space;
+}
+
+.pd-t-2 {
+    padding-top: $space*2;
+}
+
+.pd-t-3 {
+    padding-top: $space*3;
+}
+
+.pd-t-4 {
+    padding-top: $space*4;
+}
+
+.pd-t-5 {
+    padding-top: $space*5;
+}
+
+.pd-t-6 {
+    padding-top: $space*6;
+}
+
+.pd-t-7 {
+    padding-top: $space*7;
+}
+
+.pd-t-8 {
+    padding-top: $space*8;
+}
+
+.pd-b {
+    padding-bottom: $space;
+}
+
+.pd-b-2 {
+    padding-bottom: $space*2;
+}
+
+.pd-b-3 {
+    padding-bottom: $space*3;
+}
+
+.pd-b-4 {
+    padding-bottom: $space*4;
+}
+
+.pd-b-5 {
+    padding-bottom: $space*5;
+}
+
+.pd-b-7 {
+    padding-bottom: $space*7;
+}
+
+.pd-b-10 {
+    padding-bottom: $space*10;
+}
+
+//@john 寫個迴圈產生 txt-sm-center txt-md-center txt-lg-left
+.center,
+.txt-c {
+    text-align: center;
+}
+
+.txt-l {
+    text-align: left;
+}
+
+.txt-r {
+    text-align: right;
+}
+
+// @include breakpoint($max-sm) {
+//     .textC-sm {
+//         text-align: center;
+//     }
+//     .textL-sm {
+//         text-align: left;
+//     }
+//     .textR-sm {
+//         text-align: right;
+//     }
+// }
+// 其他
+.ov-hidden {
+    overflow: hidden;
+}
+
+.ov-auto {
+    overflow: auto;
+}
+
+.textflowell {
+    @include textflowell;
+}
+
+.smH {
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;
+}
+
+// 寬度設定
+.w-100 {
+    width: 100%;
+}
+
+.max-wc100 {
+    max-width: 100%;
+}
+
+.no-border {
+    border: none;
+}
+
+// 文字樣式
+// 斜體
+.fs-italic {
+    font-style: italic;
+}
+
+// 粗體
+.fs-bold {
+    font-weight: bold;
+}
+
+.fz0 {
+    font-size: 0;
+}
+
+.middle {
+    background-color: #000;
+    text-align: center;
+    >div,
+    >span,
+    >p {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 99%;
+        //background-color: #fff;
+        //border: 1px solid $color-test;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        vertical-align: middle;
+        background-color: #ff0;
+    }
+}
+
+.bg-gray {
+    background: #eee;
+}
+
+.reg {
+    font-size: 0.5em;
+    vertical-align: text-top;
+}
+
+
+/* JOHN 新增 */
+
+.txt-mobile-c {
+    @include breakpoint(0 $lg - 1) {
+        text-align: center;
+    }
+}
+
+.txt-desktop-c {
+    @include breakpoint($lg) {
+        text-align: center;
+    }
+}
+
+// .link-area-hover {
+//     position: relative;
+//     overflow: hidden;
+//     display: inline-block;
+//     font-size: 0;
+//     //border-radius: 4px;
+//     &:after {
+//         display: block;
+//         content: "";
+//         width: 100%;
+//         height: 100%;
+//         position: absolute;
+//         transition: all 0.3s ease;
+//         background-color: rgba(0, 0, 0, 0.5);
+//         //transform: scale(0);
+//         opacity: 0;
+//         visibility: hidden;
+//         left: 0;
+//         top: 0;
+//         right: 0;
+//         bottom: 0;
+//         z-index: 66;
+//     }
+//     &:hover {
+//         &:after {
+//             opacity: 1;
+//             //transform: scale(1);
+//             visibility: visible;
+//             width: 100%;
+//             height: 100%;
+//         }
+//     }
+//     &.video {
+//         &:after {
+//             visibility: visible;
+//             opacity: 1;
+//             background-color: rgba(0, 0, 0, 0.3);
+//             background-position: center center;
+//             background-repeat: no-repeat;
+//             background-image: url("../../images/layout/video.svg");
+//             //background-color: transparent;
+//         }
+//         &:hover {
+//             &:after {
+//                 background-color: rgba(0, 0, 0, 0.6);
+//             }
+//         }
+//     }
+//     &.pic {
+//         &:after {
+//             visibility: visible;
+//             opacity: 1;
+//             background-color: rgba(0, 0, 0, 0.2);
+//             transition: background-position 0.3s ease, background-size 0.3s ease;
+//             background-position: right 15px bottom 15px;
+//             background-repeat: no-repeat;
+//             background-image: url("../../images/layout/pic.svg");
+//             background-size: 24px auto;
+//             //background-color: transparent;
+//         }
+//         &:hover {
+//             &:after {
+//                 background-color: rgba(0, 0, 0, 0.4);
+//                 background-position: center center;
+//                 background-size: 54px auto;
+//             }
+//         }
+//     }
+// }

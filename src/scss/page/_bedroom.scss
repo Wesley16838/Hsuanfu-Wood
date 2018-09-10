@@ -1,0 +1,396 @@
+.bedroomPage{
+    
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 265px;
+    z-index: 10;
+    position: relative;
+    .abilitytitle{
+        position: relative;
+        z-index: 25;
+        transform: translateY(-25vw);
+        padding-left: 14vw;
+    }
+    h2{
+        &:nth-child(1){
+        color:rgba(255,255,255,.3);
+        font-size: 45px;
+        }
+        &:nth-child(2){
+        color: #fff;
+        font-size: 60px;  
+        }
+    }
+    p{
+        width:300px;
+        color: #fff;
+        font-size: 16px;
+    }
+    &:after{
+        content: "";
+        display: block;
+        background-image: url("../../images/ability/abilitywhite.svg");
+        background-size: 101% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 105%;
+        height: 21vw;
+        position: absolute;
+        left: -8px;
+        bottom: -1px;
+        @include breakpoint($md){
+            left: 0px;
+            bottom:-2px;
+        }
+    }
+    @include breakpoint($sm) {
+        height:49vw;
+    }
+}
+
+
+.linearGradient{
+    position:relative;
+    height:50%;
+    background: linear-gradient(black, transparent);
+    z-index: 20;
+    @include breakpoint(0 $sm - 1) {
+        padding-top: $headerHeightMobile;
+    }
+    @include breakpoint($sm) {
+        padding-top: $headerHeightMobile;
+    }
+
+    @include breakpoint($md) {
+        padding-top: $headerHeightTablet;
+    }
+    @include breakpoint($lg) {
+        padding-top: $headerHeightTablet;
+    }
+    @include breakpoint($xl) {
+        padding-top: $headerHeightDesktop;
+    }
+    @include breakpoint($xxl) {
+        padding-top: $headerHeightLarge;
+    }
+}
+.bedroomMain{
+    background-color:#fff;
+    font-family: $font-family;
+    margin-top: -150px;
+    display: block;
+    width: 100%;
+    height:300px;
+    z-index: 12;
+    transform: skewY(5deg);
+    @include breakpoint($lg)
+    {
+        display:block;
+        height:220px;
+    }  
+    @include breakpoint($xl)
+    {
+        display:block;
+        height:240px;
+    }  
+    @include breakpoint($xxl)
+    {
+        display:block;
+        max-height:100%;
+        height:calc( 20vh + 100px);
+    }  
+    .content{
+       
+        transform: skewY(-5deg);
+        position: relative;
+        @include breakpoint($lg)
+        {
+          
+        }    
+        h2{
+            padding-top: 20px;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+         p{
+            font-size: 16px;  
+            width: 587px;
+            max-width: 100%;  
+            
+            @include breakpoint($lg)
+                {
+                    text-align:left;
+                    
+                }   
+        }
+    }
+}
+
+.bedroomFurniture{
+    font-family: Regularfont;
+    background-position: right bottom;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    font-family: $font-family;
+    position: relative;
+    display: none;
+    
+    @include breakpoint($lg)
+        {
+            background-size: 80%;
+            display:block;
+            height:400px;
+        }  
+    @include breakpoint($xl)
+    {
+        display:block;
+        height:500px;
+    }  
+    & > .wrap{
+        height: 100%;
+    }  
+
+    @include breakpoint($xxl)
+    {
+        height:650px;
+    }  
+    & > .wrap{
+        height: 100%;
+    }  
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-end;
+        p{
+            font-family: Regularfont;
+            max-width: 100%; 
+            width: 305px;
+            max-height:100%;
+            height:113px;
+            font-size: 16px;
+            z-index:2 ;
+            position: relative;
+            @include breakpoint($lg)
+        {
+            width: 260px;
+        }  
+        @include breakpoint($xl)
+        {
+            width: 305px;
+        }  
+        }
+    }
+}
+
+.bedroomFurniture-image{
+    display:block;
+    // height: 376px;
+       img{
+        margin-left: 6%;
+        width: 100%;
+       }
+   
+    @include breakpoint($lg)
+        {
+            display: none;
+        }    
+}
+
+.bedroomFurniture-text{
+    
+    display:block;
+    margin: 25px auto 35px auto; 
+    p{
+        font-family: Regularfont;
+        width: 587px;
+        max-width: 100%;
+    }
+    @include breakpoint($lg)
+        {
+            display: none;
+        }    
+}
+
+.category{
+    font-family: Regularfont;
+    background-position: left;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    width:100%;
+    
+    margin-top: 50px;
+    @include breakpoint(0 $lg - 1)
+        {
+            
+            background-image: none !important;
+        }    
+    @include breakpoint($lg) {
+        height:345px;
+        margin-top: 50px;
+    }
+    @include breakpoint($xl) {
+        height:345px;
+        margin-top: 150px;
+    }
+    .sec{       
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include breakpoint($lg) {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .icon{
+                padding-top:15px;
+                width:300px;
+                .icon-sec{
+                   
+                    display: inline-block;
+                    text-align: center;
+                   height:70px;
+                    width:28%;
+                    margin-bottom: 10%;
+                    &:nth-of-type(3n + 2){
+                        margin: 0 6%;
+                    }
+                    &:nth-of-type(4){
+                        margin: 0;
+                    }
+                    &:nth-of-type(6){
+                        margin: 0;
+                    }
+                    p{
+                        padding-top:10px;
+                    }
+                    img{
+                        width:55%;
+                    
+                    }
+                   
+                }
+            }
+        }
+    }
+
+
+.gallery{
+    width:100%;
+    margin-bottom:100px;
+    margin-top:40px;
+    font-size: 0;
+    display: none;
+    @include breakpoint($sm)
+    {
+        display: block;
+    }  
+}
+.gallery-title{
+    text-align: center;
+    font-family: Regularfont;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    font-size: 20px;
+   
+}
+.gallery-cell{
+    display: inline-block;
+    vertical-align: top;
+    width:32%;
+    margin-bottom: 2%;
+    &:nth-of-type(3n + 2){
+        margin: 0 2%;
+    }
+    img {
+        width: 100%;
+    }
+   
+}
+.slick-slide img {
+    width: 90%;
+}
+.center{
+    width:100%;
+    display:block;
+    @include breakpoint($sm)
+        {
+            display: none;
+        }  
+   
+}
+
+.other-furniture{
+    width:100%;
+    background: linear-gradient(-10deg,#7C8FA0,#161B2B);
+    margin-top: 50px;
+    img{
+        width: 1px;
+        height: 70px;
+        margin-top: -45px;
+        margin-left: 50%;
+        display:none;
+        @include breakpoint($sm){
+          display:inline-block;
+        }
+        @include breakpoint($lg){
+            margin-top: -72px;
+            height: auto;
+        }
+    }
+    .detail{
+        margin: 0 auto;
+        padding: 53px 0 35px 0;
+        width: 100%;
+        text-align: center;
+        
+        p{
+            color:#fff;
+            font-family: $font-family;
+            font-size: 36px;
+            margin-bottom: 25px;
+            @include breakpoint($lg){
+              
+                margin-bottom: 30px;
+            }
+        }
+        a{
+            vertical-align: top;
+            display: inline-block;
+            color:#fff;
+            font-family: Regularfont;
+            font-size: 16px;
+            width: 70px;
+            margin:0 1.5%;
+            @include breakpoint($sm){
+              
+                width:140px;
+            }
+            img{ 
+                margin-left: 0;
+                margin-top: 0;
+                width:100%;
+                display: inline-block;
+            }
+            
+               
+                
+            
+        }
+    }
+}
+
+
+.no-display {
+    display: block;
+    width: 100%;
+    padding-bottom: 50px;
+    @include breakpoint($lg) {
+        display: none;
+    }
+}
+

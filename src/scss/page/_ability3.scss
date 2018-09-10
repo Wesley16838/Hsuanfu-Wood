@@ -1,0 +1,274 @@
+.abilityPage3{
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 265px;
+    z-index: 10;
+    position: relative;
+    .abilitytitle{
+        position: relative;
+        z-index: 25;
+        transform: translateY(-29vw);
+        padding-left: 14vw;
+        display: none;
+     
+        @include breakpoint($xl){
+            display:block;
+            position: relative;
+            z-index: 25;
+            transform: translateY(-29vw);
+            padding-left: 4vw;
+        }
+        @include breakpoint($xxl){
+            position: relative;
+            z-index: 25;
+            // transform: translateY(-25vw);
+            padding-left: 14vw;
+        }
+    }
+    h2{
+        &:nth-child(1){
+        color:rgba(255,255,255,.3);
+        font-size: 30px;
+        @include breakpoint($xl){
+            font-size: 30px;
+        }
+        @include breakpoint($xxl){
+            font-size: 45px;
+        }
+        }
+        &:nth-child(2){
+        color: #fff;
+        font-size: 45px;
+        @include breakpoint($xl){
+            font-size: 36px;
+        }
+        @include breakpoint($xl){
+            font-size: 60px;
+        }
+        }
+    }
+    p{
+        width:500px;
+        color: #fff;
+        font-size: 15px;
+        @include breakpoint($xxl){
+            font-size: 16px;
+        }
+    }
+    &:after{
+        content: "";
+        display: block;
+        background-image: url("../../images/ability/abilitywhite.svg");
+        background-size: 101% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 105%;
+        height: 21vw;
+        position: absolute;
+        left: -8px;
+        bottom: -1px;
+        @include breakpoint($md){
+            left: 0px;
+            bottom:-2px;
+        }
+    }
+    @include breakpoint($sm) {
+        height:50vw;
+    }
+}
+
+.ability3Article{
+    font-family: Regularfont;
+    background-color: #FFF;
+    width:100%;
+    display: block;
+    @include breakpoint($xxl) {
+        display: none;
+    }
+    .ability3Article_section{
+        display: block;
+        width: 76%;
+        float: none;
+        margin: 0px AUTO 30px auto;
+        
+        h2{
+            &:nth-child(1){
+            color:rgba(0,0,0,.3);
+            font-size: 20px;
+                @include breakpoint($xl){
+                    font-size: 45px;
+                }
+    
+            }
+            &:nth-child(2){
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+                @include breakpoint($xl){
+                    font-size: 60px;
+                }
+            }
+        }
+        p{
+            
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+        }
+        @include breakpoint($xxl) {
+            display: none;
+        }
+    }
+}
+
+.abilitythree{
+    font-family: Regularfont;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    @include breakpoint($md) {
+        background-position: bottom;
+    
+        background-size: cover;
+        padding-bottom: 300px;
+        background-size: 100%;
+       height: 60vw;
+   }
+    @include breakpoint($lg) {
+        background-position: bottom;
+        background-size: 100%;
+       height: 49vw;
+   }
+    @include breakpoint($xl) {
+         background-size: 100%;
+        height: 39vw;
+    }
+    
+    .abilitythreesection{
+        width:100%;
+        @include breakpoint($md) {
+            width:992px;
+       }
+        .threesection{
+            width:100%;
+            float:left;
+            display: block;
+            text-align: center;
+            @include breakpoint($md) {
+                width:50%;
+               
+           }
+            h2{
+                color:#9A5A11;
+                font-size:36px;
+                margin-bottom: 35px;
+            }
+            ul{
+                list-style-type:none;
+                text-align: center;
+                height: 150px;
+                @include breakpoint($md) {
+                    list-style-type:none;
+                    text-align: left;
+                    padding-left:150px;
+                    height: 200px;
+               }
+                li{
+                    position: relative;
+                    margin-bottom: 10px;
+                    width: 250px;
+                    margin: auto;
+                    text-align: left;
+                    padding-left:20px;
+                    @include breakpoint($md) {
+                        width: 100%;
+                        margin: none;
+                        padding-left:0px;
+                }
+                    &:nth-child(1){
+                        &:before{
+                        content: "地址";
+                        font-weight: bold;
+                        color: #333333;
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -59%;
+                            @include breakpoint($sm) {
+                                margin-left: -75%;
+                        }
+                        }
+                    }
+                    &:nth-child(2){
+                        &:before{
+                            content: "電話";
+                            font-weight: bold;
+                            color: #333333;
+                            display: block;
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -59%;
+                            @include breakpoint($sm) {
+                                margin-left: -75%;
+                        }
+                            }
+                    }
+                    &:nth-child(3){
+                        &:before{
+                            content: "傳真";
+                            font-weight: bold;
+                            color: #333333;
+                            display: block;
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -59%;
+                            @include breakpoint($sm) {
+                                margin-left: -75%;
+                        }
+                            }
+                    }
+                    &:nth-child(4){
+                        &:before{
+                            content: "信箱";
+                            font-weight: bold;
+                            color: #333333;
+                            display: block;
+                            position: absolute;
+                            left: 50%;
+                            margin-left: -59%;
+                            @include breakpoint($sm) {
+                                margin-left: -75%;
+                        }
+                            }
+                    }
+                }
+            }
+            a{
+                color: #333;
+                font-size: 12px;
+                border: 2px #000 solid;
+                border-radius: 50px;
+                text-align: center;
+                // height: 50px;
+                padding: 9px 30px;
+                margin: 20px 0 95px 0;
+                display: inline-flex;
+                transition:.3s ease-in;
+                @include breakpoint($sm) {
+                    padding: 13px 30px;
+                    font-size: 16px;
+            }
+            &:hover{
+                color: #fff;
+                background-color: #000;
+            }
+        }
+            
+        }
+    }
+}

@@ -1,0 +1,293 @@
+$headerHeightMobile: 55px;
+$headerHeightTablet: 100px;
+$headerHeightDesktop: 120px;
+$headerHeightLarge: 160px;
+$logoHeight:32.63px;
+$logoWidth:181px;
+$headerColor:transparent;
+h2{
+    font-weight: bold;
+}
+h3{
+    font-weight: bold;
+}
+@include breakpoint(0 $lg - 1) {
+    .show .transparentheader .fixed {
+        background-color: #fff;
+    }
+    .show .wrap-header {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .show .btn-search {
+        visibility: hidden;
+        opacity: 0;
+    }
+    .show .transparentheader {
+        border-color: transparent;
+    }
+    .show .transparentlogo{
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+.transparentheader {
+    background-color: transparent;
+    $headerHeightTablet: 100px;
+    position: fixed;
+    // background-color: $headerColor;
+    color: #fff;
+    width: 20%;
+    z-index: 120;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, height 0.3s ease;
+    .wrap{
+        padding-left: 0;
+        margin-left: 0;
+       
+        
+    }
+    @include breakpoint(0 $sm - 1) {
+        width: 100%;
+        height: $headerHeightMobile;
+        &.fixed {
+            width: 100%;
+            position: fixed;
+            background-color: #fff;
+            border-color: transparent;
+        }
+    }
+    @include breakpoint($sm) {
+        height: $headerHeightMobile;
+        &.fixed {
+            width: 100%;
+            position: fixed;
+            background-color: #fff;
+            border-color: transparent;
+        }
+    }
+
+    @include breakpoint($md) {
+        height: $headerHeightTablet;
+        width: 100%;
+        &.fixed {
+            width: 100%;
+            position: fixed;
+            background-color: #fff;
+            border-color: transparent;
+        }
+    }
+    @include breakpoint($lg) {
+        border-bottom: none;
+        height: 100px;
+        background-color:transparent; 
+        width: 20%;
+        top: 0;
+        left: 0;
+        &.fixed {
+            width: 20%;
+            position: fixed;
+            background:none;
+            height: 70px;
+            .transparentlogo {
+                height: 70px;
+                background-size: auto 64%;
+            }
+            .btn-search {
+                height: 70px;
+            }
+        }
+    }
+    @include breakpoint($xl) {
+        height: 100px;
+    }
+    @include breakpoint($xxl) {
+        height: 100px;
+        //position: fixed;
+    }
+}
+
+.wrap-header {
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+
+.transparentlogo {
+    position:fixed;
+    float:left;//
+    margin-left: 0px;
+    width: 100%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-indent: -9999px;
+    background-size: auto 64%;
+    margin: 0 auto;
+    transition: height 0.3s ease, background-size 0.3s ease;
+    height: 55px;
+    img{
+        
+        width:72px;
+       
+        display: block;
+        @include breakpoint($sm) {
+            width: $logoWidth;
+        }
+    }
+    @include breakpoint($sm) {
+       
+        height:55px;
+    }
+    @include breakpoint($md) {
+        margin: 0 0 0 0;
+        height: $headerHeightTablet;
+        background-position: left center;
+        background-size: auto 50%;
+       
+    }
+    @include breakpoint($lg) {
+        margin: 0 0 0 0;
+      width:330px;
+       
+    }
+    @include breakpoint($xl) {
+        margin: 0 0 0 0;
+        height: 100px;
+        background-position: left center;
+        background-size: auto 50%;
+        //width: 360px;
+    }
+    @include breakpoint($xxl) {
+        height: 100px;
+        //background-size: auto 64%;
+    }
+    //border: 1px solid rgb(255, 7, 7);
+}
+
+.btn-search,
+.nav-transparenttoggle {
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: $headerHeightMobile;
+    height: $headerHeightMobile;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    transition: background-size 0.3s ease, opacity 0.3s ease;
+    text-indent: -9999px;
+    font-size: 0;
+    opacity: 0.8;
+    @include breakpoint($md) {
+        width: $headerHeightTablet;
+        height: $headerHeightTablet;
+        background-size: 24px auto;
+    }
+    @include breakpoint($lg) {
+        width: $headerHeightDesktop;
+        height: $headerHeightDesktop;
+    }
+    @include breakpoint($xl) {
+        &:hover {
+            background-size: 28px auto;
+            opacity: 1;
+        }
+    }
+    @include breakpoint($xxl) {
+        height: $headerHeightLarge;
+    }
+}
+
+.btn-search {
+    background-image: url("../../images/layout/search.svg");
+    right: 0;
+    transition: height 0.3s ease, visibility 0.3s ease, opacity 0.3s ease;
+    @include breakpoint($xl) {
+        right: 8%;
+    }
+    @include breakpoint($xl) {
+        right: 50px;
+    }
+}
+
+// .nav-toggle {
+//     // left: 0;
+//     // transition: height 0.3s ease;
+//     @include breakpoint($md) {
+//         background-color: #ff0;
+//         display: none;
+//     }
+// }
+.nav-transparenttoggle {
+    // display: block;
+    // overflow: hidden;
+    // float: right;
+    // position: relative;
+    // width: 70px;
+    // height: 50px;
+    // padding: 0;
+    // left: 0;
+    //top: 0;
+    z-index: 120;
+    //background-color: #ff0;
+    //background-color: #ff0;
+    @include transition(transform 0.3s);
+    // @include breakpoint($xl) {
+    //     display: none;
+    // }
+    // @include breakpoint($sm) {
+    //     right: 4%;
+    // }
+    @include breakpoint($lg) {
+        display: none;
+        //height: $height-header-xs;
+    }
+}
+
+.nav-transparenttoggle span,
+.nav-transparenttoggle:before,
+.nav-transparenttoggle:after {
+    height: 2px;
+    width: 22px;
+    top: 47%;
+    left: 50%;
+    margin-left: -11px;
+    background: #333;
+    position: absolute;
+    display: block;
+    content: '';
+    text-indent: -9999px;
+    background-color: #333;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-transparenttoggle:before {
+    margin-top: -6px;
+}
+
+.nav-transparenttoggle:after {
+    margin-top: 6px;
+}
+
+body.show {
+    .nav-transparenttoggle {
+        &:before {
+            margin-top: 0;
+            background-color: #333;
+            @include rotate(-45deg);
+        }
+        &:after {
+            margin-top: 0;
+            background-color: #333;
+            @include rotate(45deg);
+        }
+        span {
+            background-color: #333;
+            opacity: 0;
+        }
+    }
+}

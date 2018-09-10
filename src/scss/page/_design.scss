@@ -1,0 +1,325 @@
+
+.designroom-article {
+    font-family: Regularfont;
+    position: relative;
+    z-index: 99;
+    transform: translateY(-8vw);
+    h2{
+        font-size: 26px;
+        @include breakpoint($md){
+            font-size: 60px;
+        }
+    }
+    p{
+        font-size: 15px;
+        margin-top: 15px;
+        @include breakpoint($md){
+            font-size: 36px;
+            margin-top: 20px;
+        }
+    }
+}
+.designPage{
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 265px;
+    z-index: 10;
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        background-image: url("../../images/design/tria.svg");
+        background-size: 101% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 105%;
+        height: 21vw;
+        position: absolute;
+        left: -8px;
+        bottom: -1px;
+        @include breakpoint($md){
+            left: 0px;
+            bottom:-2px;
+        }
+    }
+    @include breakpoint($sm) {
+        height:40vw;
+    }
+}
+.linearGradient{
+   position:relative;
+   height:50%;
+   background: linear-gradient(black, transparent);
+   z-index: 20;
+   @include breakpoint(0 $sm - 1) {
+       padding-top: $headerHeightMobile;
+   }
+   @include breakpoint($sm) {
+       padding-top: $headerHeightMobile;
+   }
+
+   @include breakpoint($md) {
+       padding-top: $headerHeightTablet;
+   }
+   @include breakpoint($lg) {
+       padding-top: $headerHeightTablet;
+   }
+   @include breakpoint($xl) {
+       padding-top: $headerHeightDesktop;
+   }
+   @include breakpoint($xxl) {
+       padding-top: $headerHeightLarge;
+   }
+}
+
+
+.design-section{
+    font-family: Regularfont;
+    padding-top: 30px;
+    margin-top: 80px;
+    width:100%;
+    height:750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    @include breakpoint($lg){
+        display: flex;
+    }
+    .flex{
+        display: block;
+        margin-left: 35%;
+        width:600px;
+        h2{
+            font-size: 36px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+.design-article{
+    font-family: Regularfont;
+    position: relative;
+    z-index: 10;
+   
+
+        h2{
+            font-size: 26px;
+            @include breakpoint($md){
+                font-size: 60px;
+            }
+        }
+        p{
+            font-size: 15px;
+            @include breakpoint($md){
+                font-size: 36px;
+            }
+        }
+    // }
+    .title{
+        height:150px;
+        margin-left:6%;
+    }
+    .right{
+        display:block;
+        padding-top:10%;
+        padding-bottom:5%;
+}
+}
+
+
+.designarticle{
+    font-family: Regularfont;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 52vw;
+    display: none;
+    // margin-top: 60px;
+    .pd{
+        padding-top: 3vw;
+    }
+    img{
+        width:100%;
+    }
+    @include breakpoint($lg){
+        display: inherit;
+    }
+        h2{
+            font-size: 36px;
+            width:600px;
+            margin-bottom: 30px;
+        }
+        p{
+            font-size: 16px;
+            width:600px;
+            line-height: 30px;
+            
+        }
+
+}
+
+
+.design-bottom{
+    font-family: Regularfont;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:400px;
+    padding: 50px 0;
+    position: relative;
+    font-size: 0;
+    display:none;
+    @include breakpoint($lg){
+        display:block;
+    }
+    .wrap {
+        display: flex;
+        flex-direction: row;
+    }
+    .content{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: justify;
+        &.reverse{
+            right:170px;
+            justify-content: flex-end;
+            .content-detail {
+         
+                p {
+                    &:nth-child(1){
+                        color:#000000;
+                        text-align: right;
+                    }
+                    &:nth-child(2){
+                        margin: 0;
+                        text-align: justify;
+                    } 
+                    color:rgb(0,0,0);
+                } 
+            }
+        }
+    }
+    .content-detail {
+        width: 300px;
+        position: relative;
+
+        p {
+            &:nth-child(1){
+                font-size: 20px;
+                color:#fff;
+            }
+            &:nth-child(2){
+                font-size: 14px;
+                color:rgba(255,255,255,0.5);
+            }
+            
+        }
+    }
+}
+
+
+.designBottomRwd{
+    display: flex; 
+  
+    @include breakpoint($lg){
+        display: none;
+    }
+    .sec{
+        padding:30px 0;
+        display: block;
+        width:50%;
+        text-align: center;
+        &:nth-child(1){
+            background-color: #1A2428;
+            img{
+                margin-right: 10px;
+            }
+            
+        }
+        &:nth-child(2){
+            background-color: #EDECEA;
+            img{
+                margin-left: 10px;
+            }
+            
+        }
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center
+
+        }
+    }
+}
+
+.aleft{
+    color:#FFFFFF;
+
+}
+
+.aright{
+    color:#333333;
+}
+
+.left{
+    margin-right:5%;
+}
+
+.right{
+    margin-left:5%; 
+}
+
+.design-image{
+    display: block;
+    img{
+        width: 90%;
+        margin: 0 5%;
+        @include breakpoint($md){
+            width: 70%;
+            margin: 0 15%;
+        }
+    }
+    @include breakpoint($lg){
+        display: none;
+    }
+}
+.design-content{
+    font-family: Regularfont;
+    height: 550px;
+    display: block;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include breakpoint($lg){
+        display: none;
+    }
+    h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    }
+    p{
+    font-size: 15px;
+    }
+}
+
+.padding-left{
+padding-left: 10%;
+transform: translateY(-5vw); 
+    @include breakpoint($lg){
+        padding-left: 6%;
+    }
+}

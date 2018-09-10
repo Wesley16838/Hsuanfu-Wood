@@ -1,0 +1,121 @@
+.livingroompage{
+    
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 265px;
+    z-index: 10;
+    position: relative;
+    .abilitytitle{
+        position: relative;
+        z-index: 25;
+        transform: translateY(-25vw);
+        padding-left: 14vw;
+    }
+    h2{
+        &:nth-child(1){
+        color:rgba(255,255,255,.3);
+        font-size: 45px;
+        }
+        &:nth-child(2){
+        color: #fff;
+        font-size: 60px;  
+        }
+    }
+    p{
+        width:300px;
+        color: #fff;
+        font-size: 16px;
+    }
+    &:after{
+        content: "";
+        display: block;
+        background-image: url("../../images/ability/abilitywhite.svg");
+        background-size: 101% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 105%;
+        height: 21vw;
+        position: absolute;
+        left: -8px;
+        bottom: -1px;
+        @include breakpoint($md){
+            left: 0px;
+            bottom:-2px;
+        }
+    }
+    @include breakpoint($sm) {
+        height:49vw;
+    }
+}
+
+.livingroom{
+    width:100%;
+    display: inline-block;
+    img{
+        width:100%;
+    }
+    .iconsec{
+        
+        margin:90px auto 0 auto;
+        width:100%;
+       
+        @include breakpoint($lg){
+            display: flex;
+            align-items:flex-end; 
+            justify-content: space-between;
+            width:880px;
+        }
+        .icon{
+            font-family: Regularfont;
+            width:32.4%;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 20px;
+            @include breakpoint($lg){
+                display: inline-block;
+                width:80px;
+            }
+            img{
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+.livingroom-article{
+    font-family: Regularfont;
+    position: relative;
+    z-index: 99;
+    transform: translateY(-3vw);
+
+        h2{
+            margin-bottom: 20px;
+            font-size: 26px;
+            @include breakpoint($md){
+                font-size: 45px;
+            }
+        
+        }
+        p{
+            font-size: 15px;
+            
+            @include breakpoint($md){
+                font-size: 16px;
+                width:600px;
+            }
+        }
+    .title{
+        height:150px;
+        margin-left:6%;
+    }
+    .right{
+        display:block;
+        padding-top:10%;
+        padding-bottom:5%;
+}
+}
+
+

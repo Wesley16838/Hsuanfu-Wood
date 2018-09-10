@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Amiri" rel="stylesheet">
+
+
+    <title>聯絡我們</title>
+
+    <!-- build:css -->
+    <!-- endbuild -->
+
+
+</head>
+
+<body>
+    <!-- @@include ../include/contactnav.html -->
+    <!-- @@include ../include/transparentheader.html -->
+    <div class="contactlanguage">
+        <a href="#" class="text">CH/EN</a>
+    </div>
+    <div class="wrap-fs contact" style="background-image:url(../../images/contact/bgnew.jpg) ">
+        <div class="wrap wow fadeInUp" data-wow-delay=".5s">
+            <div class="forminfo">
+                <h2>聯絡我們</h2>
+                <p>感謝您主動拜訪軒福木業如果您有任何相關的問題，我們歡迎您隨時來信指教， 並請您確實填寫右方資訊欄位，以方便我們儘快針對您的問題做回覆。</p>
+                <p>(
+                    <span class="error">*</span> 符號為必填項目)</p>
+            </div>
+            <form>
+
+
+                <label for="genre" class="formlabel">詢問類別
+                    <span class="error">*</span>
+                </label>
+                <select name="genre" class="forminput_short">
+                    <option selected disabled style="color:#BCBCBC">請選擇類別</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+
+                <label for="name" class="formlabel name">姓名
+                    <span class="error">*</span>
+                </label>
+                <input type="text" class="forminput_short" id="name" name="name">
+
+
+
+                <label for="company" class="formlabel">公司單位</label>
+                <input type="text" class="forminput_short" id="company" name="company">
+
+
+
+                <label for="phonenumber" class="formlabel phone">連絡電話
+                    <span class="error">*</span>
+                </label>
+                <input type="text" class="forminput_short" name="phonenumber" pattern="[0-9]{2}-[0-9]{8}" placeholder="##-########">
+
+
+
+                <label for="address" class="formlabel">連絡地址</label>
+                <select name="city" class="forminput_address_short">
+                    <option selected disabled style="color:#BCBCBC;">縣市</option>
+                    <option value="1">1</option>
+                </select>
+                <select name="county" class="forminput_address_short address marginleft">
+                    <option selected disabled style="color:#BCBCBC;">鄉鎮區</option>
+                    <option value="1">1</option>
+                </select>
+                <input type="text" class="forminput_address_long address" name="address" placeholder="路/街/巷弄/樓層">
+
+
+
+                <label for="email" class="formlabel">Email
+                    <span class="error">*</span>
+                </label>
+                <input type="text" class="forminput_email" name="email">
+
+
+
+                <label for="comment" class="formlabel">訊息
+                    <span class="error">*</span>
+                </label>
+
+                <textarea rows="4" cols="50" name="comment" form="usrform" class="forminput_email"></textarea>
+
+
+
+                <div class="robot-section">
+                    <div class="robot"></div>
+                </div>
+                <div class="formbutton">
+                    <a href="javascript:chk_form()" class="btn blue">送出</a>
+                    <a href="javascript:reset()" class="btn dark">重新填寫</a>
+                </div>
+
+
+
+
+
+            </form>
+
+            <div class="col-12 row">
+                <div class="col-lg-6 "></div>
+                <div class="col-lg-6 col-12 info">
+
+                    <h2>業務聯絡</h2>
+                    <h2>+886-4-758-5705</h2>
+                    <p>傳真&nbsp;&nbsp;+886-4-758-5751</p>
+                    <p>信箱&nbsp;&nbsp;hsuanfu@hsuanfu.com.tw</p>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- @@include ../include/footer.html -->
+    <!-- @@include ../include/loading.html -->
+    <!-- build:js -->
+    <!-- endbuild -->
+    <!-- build:js-slick -->
+    <!-- endbuild -->
+    <!-- build:js-wow -->
+    <script src="../../javascripts/wow/wow.js"></script>
+    <!-- endbuild -->
+</body>
+<script type="text/javascript">
+    new WOW().init();
+</script>
+
+</html>

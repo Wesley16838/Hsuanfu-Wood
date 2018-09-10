@@ -1,0 +1,470 @@
+.language{
+    width:65px;
+    float:right;
+    font-size: 10px;
+    position: fixed;
+    right:0px;
+    height:55px;
+    transition: height .3s ease,background-size .3s ease;
+    color:#fff;
+    z-index: 380;
+    font-family:  $font-family;
+    .text{
+        color:#fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    @include breakpoint($sm) {
+        font-size: 16px;
+        right:15px;
+        height:55px;
+    }
+    @include breakpoint($md) {
+        right:32px;
+        height: 100px;
+        background-position: left center;
+        background-size: auto 50%;
+        &.fixed {
+            height:100px;
+        }
+        // width: 339px;
+    }
+    @include breakpoint($lg) {
+        right:32px;
+        height: 100px;
+        background-position: left center;
+        background-size: auto 50%;
+        &.fixed {
+            height:70px;
+        }
+        // width: 339px;
+    }
+    @include breakpoint($xl) {
+        // right:64px;
+        height: 100px;
+        right:64px;
+        background-position: left center;
+        background-size: auto 50%;
+        &.fixed {
+            height: 70px;
+        }
+      
+    }
+    @include breakpoint($xxl) {
+        height: 100px;
+        right:64px;
+        &.fixed {
+            height: 70px;
+        }
+        //background-size: auto 64%;
+    }
+}
+.mainpage{
+    width:100%;
+    height: 300px;
+    z-index: 10;
+    @include breakpoint($sm) {
+       height:60vw;
+   }
+   
+   @include breakpoint($xl) {
+       height:100vh;
+   }
+    .page{
+    //  background-image: url("../../images/background.jpg");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     width:100%;
+     height: 300px;
+     z-index: 10;
+     @include breakpoint($sm) {
+        height:60vw;
+    }
+    
+    @include breakpoint($xl) {
+        height:100vh;
+    }
+    }
+}
+
+.linearGradient{
+    position:relative;
+    height:60%;
+    background: linear-gradient(black, transparent);
+    z-index: 20;
+    @include breakpoint(0 $sm - 1) {
+        padding-top: $headerHeightMobile;
+    }
+    @include breakpoint($sm) {
+        padding-top: $headerHeightMobile;
+    }
+
+    @include breakpoint($md) {
+        padding-top: $headerHeightTablet;
+    }
+    @include breakpoint($lg) {
+        padding-top: $headerHeightTablet;
+    }
+    @include breakpoint($xl) {
+        padding-top: $headerHeightDesktop;
+    }
+    @include breakpoint($xxl) {
+        padding-top: $headerHeightLarge;
+    }
+}
+
+.title{
+// position: absolute;
+display: block;
+// position: absolute;
+// top: 81px;
+// left: 50%;
+// transform: translate(-50%, -50%);
+width: 100%;
+text-align: center;
+@include breakpoint($md) {
+    // top: 50%;
+}
+    h2{
+        color:#fff;
+        font-family: $font-family;
+        font-size: 22px;
+        font-weight: normal;
+        @include breakpoint($md){
+            line-height: 64px;
+            font-size: 48px;
+        }
+    }
+    p{
+        font-size: 15px;
+        color:#fff;
+        font-family: Regularfont;
+        line-height: 27px;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 10px;
+   
+        @include breakpoint($md) {
+    
+                line-height: 32px;
+                font-size: 20px;
+                text-align: center;
+                letter-spacing: 16px;
+    
+        }
+    }
+}
+
+.searchbox{
+    
+    background: linear-gradient(150deg, #707388, #5D6074 , #4E5164,#3C3F51,#2D3148);
+    font-family: Regularfont;
+    z-index: 2;
+    padding: 15px 30px 20px 30px;
+    display: flex;
+    transform: translateY(-45%);
+    align-items: center;
+    justify-content: center;
+    @include breakpoint($lg) {
+        padding: 35px 156px ;
+    }
+    h2{
+        display: block;
+        color:#fff;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 10px;
+        @include breakpoint($sm) {
+            width: auto;
+            text-align: left;
+            font-size: 26px;
+            display: inline-block;
+        }
+    }
+    p{
+        // line-height: 45px;
+        display: none;
+        position: relative;
+        color:#9A9EB5;
+        font-size:15px;
+        width: 100%;
+        @include breakpoint($sm) {
+            font-size:16px;
+            display: inline-block;
+            width: auto;
+            float: right;
+        }
+        @include breakpoint($md) {
+            &:before {
+                content:'';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: -255px;
+                transform: translateY(-50%);
+                border-bottom: 1px solid #707070;
+                width:242.37px;
+                height: 1px;
+            }
+        }
+    }
+    input[type=text] {
+        display: block;
+        height:30px;
+        width: 100%;
+        padding-top:8px;
+        padding-bottom: 8px;     
+        font-size: 12px;
+        border: none;
+        text-align: center;
+        @include breakpoint($sm) {
+            padding-top: 12.5px;
+            padding-bottom: 12.5px;
+            font-size: 16px;
+            width: calc(100% - 158px);
+            display: inline-block;
+            vertical-align: top;
+            padding-left:28.5px;
+            text-align: left;
+            height:45px;
+        }
+      }
+      a{
+          display: block;
+          margin-top: 10px;
+         width: 100%;
+         padding:8px 0;
+         text-align: center;
+         height:36px;
+         font-size: 15px;
+         color: #333;
+         background-color: #D5D5D5;
+         @include breakpoint($sm) { 
+            height:30px;
+              padding: 13px 0;
+              margin-top: 0;
+              margin-left:2px;
+              width: 150px;
+              display: inline-block;
+              height:45px;
+              font-size: 16px;
+          }
+      }
+    .search-detail {
+        width: 100%;
+    }
+}
+
+
+.slick-slider {
+    margin-bottom: 0px;
+}
+.article{
+    position: relative;
+   
+    font-family: Regularfont;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 90;
+    width: 100%;
+    height: 260px;
+    @include breakpoint($sm) {
+    height:500px;            
+    }
+    .articleTitle{
+        width: 100%;
+        position: absolute;
+        top:139px;
+        left: 50%;
+        transform: translateX(-50%);
+     
+        text-align: center;
+        @include breakpoint($sm) {
+            top: 238px;            
+            }
+        h2{
+            font-size:30px ;
+            @include breakpoint($sm) {
+                font-size:42px;
+            }
+        }
+        p{
+         
+            &:nth-child(2){
+                font-size: 15px;
+                color:#95989A;
+            }
+            &:nth-child(3){
+                font-size: 15px;
+                color:#95989A;
+            }
+            @include breakpoint($sm) {
+               
+              
+                &:nth-child(2){
+                    font-size: 20px;
+                    color:#95989A;
+                }
+                &:nth-child(3){
+                    font-size: 20px;
+                    color:#95989A;
+                }
+            }
+        }
+    }
+}
+
+.board {
+    width: 100%;
+    position: relative;
+    font-size: 0;
+}
+.board-color{
+    display: inline-block;
+    height:120px;
+    background-color:#f9f5f2 ;
+    width:100%;
+    &.reverse {
+        background-color: #1a191e ;
+    }
+    @include breakpoint($md) {
+        display: none;
+    }
+}
+.board-detail {
+    font-family: Regularfont;
+    background-position: top; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 100%;
+    padding: 30px 15px;
+    color: #333;
+    text-align: center;
+    height: 300px;
+    &.reverse {
+        color: #fff;
+        h2 {
+            width: 42vh;
+        }
+        a {
+            color: #fff;
+            border: 2px #fff solid;
+            width:200px;
+            transition:.3s ease-in;
+            &:hover{
+                color:#000;
+                background-color: #fff;
+                img{
+                    transform: translateX(15px);
+                }
+            }
+            &:focus{
+                color:#000;
+                background-color: #fff;
+                img{
+                    transform: translateX(15px);
+                }
+            }
+        }
+    }
+    @include breakpoint($sm) {
+        height: 50vw;
+    }
+    @include breakpoint($md) {
+        background-position: center; 
+        width: 50%;
+        display: inline-block; 
+        vertical-align: top;
+        height: 60vw;
+        padding: 50px 60px;
+    }
+    @include breakpoint($lg) {
+        height: 60vw;
+    }
+    @include breakpoint($xl) {
+        height: 820px;
+    }
+    h2 {
+        font-size: 26px;
+        padding-bottom: 20px;
+        display: block;
+        width:41vh;
+        max-width: 100%;
+        margin: 0 auto;
+        transform: translateY(-110px);
+        @include breakpoint($md) {
+           font-size: 36px;
+           width:37vh;
+           transform: none;
+        }
+    }
+    p {
+        font-size: 15px;
+        padding-bottom: 30px;
+        display: block;
+        transform: translateY(-110px);
+        @include breakpoint($md) {
+           font-size: 16px;
+           transform: none;
+           
+            margin: auto;
+        }
+        @include breakpoint($xl) {
+            font-size: 16px;
+            transform: none;
+            width: 430px;
+             margin: auto;
+         }
+    }
+    a {
+        color: #000;
+        margin: auto;
+        font-size: 12px;
+        display: block;
+        border: 2px #000 solid;
+        border-radius: 50px;
+        text-align: center;
+        height: 38px;
+        padding: 9px 30px;
+        width:230px;
+        transform: translateY(-110px);
+        transition:.3s ease-in;
+        &:hover{
+            color:#fff;
+            background-color: #000;
+            img{
+                transform: translateX(15px);
+            }
+        }
+        &:focus{
+            color:#fff;
+            background-color: #000;
+            img{
+                transform: translateX(15px);
+            }
+        }
+        @include breakpoint($md) {
+            height: 50px;
+            padding: 13px 30px;
+            font-size: 16px;
+            width:270px;
+            transform: none;
+        }
+        img{
+            vertical-align: middle;
+            transition:.3s ease-in;
+            @include breakpoint($sm) {
+                vertical-align: unset;
+            }
+            
+        }
+    }
+}
+

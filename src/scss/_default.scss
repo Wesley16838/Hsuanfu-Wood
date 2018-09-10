@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Helvetica, Arial, Verdana, "PingFang", "PingFangTC", "Microsoft JhengHei", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.375em;
+     ::selection {
+        background: $color-main;
+        color: #fff;
+    }
+     ::-moz-selection {
+        background: $color-main;
+        color: #fff;
+    }
+    img::selection {
+        background: transparent;
+    }
+    img::-moz-selection {
+        background: transparent;
+    }
+    * {
+        line-height: 1.375em;
+    }
+}
+
+input,
+select,
+textarea {
+    outline: none;
+    font-family: Helvetica, Arial, Verdana, "PingFang", "PingFangTC", "Microsoft JhengHei", sans-serif;
+    font-size: 1rem;
+    line-height: 1.375em;
+    &:focus {
+        outline: none;
+    }
+}
+
+
+/*a連結設定*/
+
+a {
+    text-decoration: none;
+    color: $color-main;
+    outline: none;
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+select {
+    background: #fff;
+}
+
+@include breakpoint(0 $xl - 1) {
+    //在手機時隱藏
+    .mobile-hide {
+        display: none;
+    }
+}
+
+@include breakpoint($xxl) {
+    //在桌面隱藏
+    .dsk-hide {
+        display: none;
+    }
+}
+
+.mask {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 9000;
+    left: 0;
+    top: 0;
+}
+
+//這是用來控制目前是什麼行動模式或是桌面模式
+#js-rwd {
+    display: block;
+    height: 0;
+    width: 0;
+    background: transparent;
+    visibility: hidden;
+    @include breakpoint($xl) {
+        width: 10px;
+    }
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.75em;
+    // @include breakpoint($md) {
+    //     font-size: 1.125rem;
+    // }
+    @include breakpoint($xl) {
+        font-size: 1.125rem;
+    }
+}
+
+// .tags-contents {
+//     visibility: hidden;
+//     opacity: 0;
+//     display: none;
+//     &.show {
+//         visibility: visible;
+//         opacity: 1;
+//         display: block;
+//     }
+// }
+.load {
+    //@include background(linear-gradient(to bottom right, $color-main, ));
+    @include background-image(radial-gradient(#000 0%, rgb(0,0,0) 100%));
+    position: fixed;
+    z-index: 6000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img {
+        display: inline-block;
+        width: 72px;
+        height: auto;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+}
+
+sub,
+sup {
+    font-size: 0.625em;
+    margin-right: 0.5rem;
+}
+
+@font-face {
+    font-family: Regularfont;
+    src: url(../scss/plugin/font/NotoSerifCJKsc-Regular.otf);
+  }
+
+
+
+

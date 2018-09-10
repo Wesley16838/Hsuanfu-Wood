@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88.722 88.723">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 2.632px;
+      }
+    </style>
+  </defs>
+  <g id="_x38__1_" transform="translate(-0.039 -0.039)">
+    <g id="Group_1272" data-name="Group 1272" transform="translate(8.066 8.762)">
+      <path id="Path_13066" data-name="Path 13066" class="cls-1" d="M10.023,77.705,7,78.552l3.99-15.477L63.344,10.6" transform="translate(-7 -6.942)"/>
+      <path id="Path_13067" data-name="Path 13067" class="cls-1" d="M73.283,20.1,20.929,72.575,14.4,74.268" transform="translate(-5.453 -4.956)"/>
+      <line id="Line_469" data-name="Line 469" class="cls-1" x2="7.617" y2="7.617" transform="translate(60.213 7.527)"/>
+      <path id="Path_13068" data-name="Path 13068" class="cls-1" d="M65.066,22.719l2.3-2.3a4.6,4.6,0,0,0,0-6.529L62.526,8.935a4.6,4.6,0,0,0-6.529,0l-2.3,2.3" transform="translate(2.765 -7.575)"/>
+      <line id="Line_470" data-name="Line 470" class="cls-1" x1="47.034" y2="47.034" transform="translate(15.114 9.461)"/>
+      <line id="Line_471" data-name="Line 471" class="cls-1" x2="5.32" y2="5.441" transform="translate(5.441 57.221)"/>
+    </g>
+    <line id="Line_472" data-name="Line 472" class="cls-1" x1="22.489" y1="22.489" transform="translate(41.921 58.486)"/>
+    <path id="Path_13069" data-name="Path 13069" class="cls-1" d="M52.4,38.7,76.34,62.64,59.776,79.2" transform="translate(10.56 7.695)"/>
+    <path id="Path_13070" data-name="Path 13070" class="cls-1" d="M24.752,41.317,1.9,18.465,18.465,1.9,46.274,29.709" transform="translate(0 0)"/>
+    <line id="Line_473" data-name="Line 473" class="cls-1" x1="3.023" y2="3.023" transform="translate(76.26 63.202)"/>
+    <line id="Line_474" data-name="Line 474" class="cls-1" x1="3.023" y2="3.023" transform="translate(69.489 56.551)"/>
+    <line id="Line_475" data-name="Line 475" class="cls-1" x1="3.023" y2="3.023" transform="translate(62.839 49.781)"/>
+    <line id="Line_476" data-name="Line 476" class="cls-1" x1="3.023" y2="3.023" transform="translate(35.997 22.938)"/>
+    <line id="Line_477" data-name="Line 477" class="cls-1" x1="4.836" y2="4.836" transform="translate(27.412 16.288)"/>
+    <line id="Line_478" data-name="Line 478" class="cls-1" x1="3.023" y2="3.023" transform="translate(22.576 9.517)"/>
+    <line id="Line_479" data-name="Line 479" class="cls-1" x1="4.836" y2="4.836" transform="translate(67.675 56.551)"/>
+  </g>
+</svg>

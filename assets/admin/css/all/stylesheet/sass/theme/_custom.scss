@@ -1,0 +1,54 @@
+/* Only demo */
+.bg-login {
+	background:url("../../img/bg-login.jpg") no-repeat center center;
+	background-size: cover;
+}
+.login {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -150px;
+    .form-control,
+    .single-line {
+        font-size: 15px;
+        padding: 6px 20px;
+        border-radius: 2px;
+    }
+}
+
+.portrait {
+	text-align: center;
+	img {
+		display: inline-block;
+		width: 120px;
+		height: auto;
+		border: 5px solid rgba(255,255,255,0.8);
+		border-radius: 50%;
+		margin-bottom: 20px;
+	}
+}
+.copyright {
+    font-size: 13px;
+    font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: light;
+    a {
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1000px) {
+    .welcome-message {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .login {
+        width: 80vw;
+        height: auto;
+        position: static;
+        margin: 0 auto;
+    }
+}

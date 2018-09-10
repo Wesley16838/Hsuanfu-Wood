@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1 112">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #000;
+        opacity: 0.1;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_671" data-name="Group 671" transform="translate(-720 -3408.5)">
+    <line id="Line_34" data-name="Line 34" class="cls-1" y2="72" transform="translate(720.5 3408.5)"/>
+    <line id="Line_35" data-name="Line 35" class="cls-2" y2="40" transform="translate(720.5 3480.5)"/>
+  </g>
+</svg>

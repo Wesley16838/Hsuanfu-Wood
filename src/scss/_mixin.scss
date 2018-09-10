@@ -1,0 +1,251 @@
+// 背景覆蓋樣式
+@mixin bgcover {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin bgcontain {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@mixin bgfixed {
+    background-attachment: fixed;
+}
+
+//圖片外框圓角
+@mixin radius4s($px) {
+    -webkit-border-radius: $px;
+    -moz-border-radius: $px;
+    border-radius: $px;
+}
+
+//文字陰影
+@mixin ts($color, $x, $y, $px) {
+    text-shadow: $color $x $y $px;
+}
+
+//圖片陰影
+@mixin bs($color, $x, $y, $px) {
+    box-shadow: $color $x $y $px;
+}
+
+// 文字超過出現點點點
+@mixin textflowell {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 取消文字超過出現點點點
+@mixin textflowclip {
+    overflow: visible;
+    text-overflow: clip;
+    white-space: normal;
+}
+
+@mixin borderbox {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin clearfix {
+    display: block;
+    content: ".";
+    clear: both;
+    line-height: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+// 位移
+@mixin transformX($val) {
+    transform: translateX($val);
+    -webkit-transform: translateX($val);
+    -moz-transform: translateX($val);
+    -o-transform: translateX($val);
+    -ms-transform: translateX($val);
+}
+
+@mixin transformY($val) {
+    transform: translateY($val);
+    -webkit-transform: translateY($val);
+    -moz-transform: translateY($val);
+    -o-transform: translateY($val);
+    -ms-transform: translateY($val);
+}
+
+@mixin transformXY($valX, $valY) {
+    transform: translate($valX, $valY);
+    -webkit-transform: translate($valX, $valY);
+    -moz-transform: translate($valX, $valY);
+    -o-transform: translate($valX, $valY);
+    -ms-transform: translate($valX, $valY);
+}
+
+// 滑過
+@mixin aHFA {
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+        @content;
+    }
+}
+
+// 漸變
+@mixin transition($s) {
+    -webkit-transition: All $s linear;
+    -moz-transition: All $s linear;
+    -o-transition: All $s linear;
+    transition: All $s linear;
+}
+
+// 清除select下拉樣式
+@mixin selectAppearance {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+//在容器內產生before icon
+@mixin button($fontColor, $bgColor, $hoverFontColor, $hoverBgColor) {
+    color: $fontColor;
+    background-color: $bgColor;
+    &:hover,
+    &:active {
+        color: $hoverFontColor;
+        //background-color: $hoverBgColor;
+        &:after {
+            background-color: $hoverBgColor;
+        }
+    }
+}
+
+//自訂滾輪樣式
+@mixin scrollstyle($W, $Bgcolor, $borderC, $BgTcolor, $BgHcolor) {
+    &::-webkit-scrollbar {
+        width: $W;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $Bgcolor;
+        border-left: 1px solid $borderC;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $BgTcolor;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $BgHcolor;
+    }
+    // http://blog.rx836.tw/blog/css-styling-scrollbars/
+}
+
+//在容器內產生before icon
+@mixin icon($wrap-width, $wrap-height, $index, $size, $height, $align, $outter-box:true) {
+    // 外框寬度, 外框高度, icon序號, 所佔的隔數 , 圖像高度, 對齊, 是否要設定有外框容器寬高(預設有)
+    // ex. @include icon(1, 4, 50px)
+    $icon-real-width: $height*$size;
+    $icon-real-height: $height;
+    $pd-top: ($wrap-height - $height)/2;
+    $pd-left: ($wrap-width - $icon-real-width)/2;
+    //@ 加入置左 / 置中 / 置右選項
+    //
+    @if($outter-box==true) {
+        width: $wrap-width;
+        height: $wrap-height;
+    }
+    @else {
+        position: relative;
+    }
+    @if ($align=="left") {
+        $align: left;
+        //$pd-left: 0;
+        padding: $pd-top 0 0 0;
+    }
+    @else if ($align=="right") {
+        $align: right;
+        padding: $pd-top 0 0 $pd-left*2;
+    }
+    @else {
+        $align: center;
+        padding: $pd-top 0 0 $pd-left;
+    }
+    font-size: 0;
+    text-align: $align;
+    &:before {
+        content: "";
+        display: inline-block;
+        font-size: 0;
+        background-image: url('../../images/layout/icon.svg');
+        background-size: auto $height;
+        background-position: 0 - ($index - 1)*$height 0;
+        width: $icon-real-width;
+        height: $height;
+        vertical-align: middle;
+        // @if($outter-box==false) {
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 50%;
+        //     z-index: 168;
+        //     transform: translate(-50%, -50%);
+        // }
+    }
+}
+
+// 只適用於icon之後
+@mixin iconResize($wrap-width,
+$wrap-height,
+$index,
+$size,
+$height,
+$align) {
+    // 外框寬度, 外框高度, icon序號, 所佔的隔數 , 圖像高度
+    // ex. @include icon(1, 4, 50px)
+    $icon-real-width: $height*$size;
+    $icon-real-height: $height;
+    $pd-top: ($wrap-height - $height)/2;
+    $pd-left: ($wrap-width - $icon-real-width)/2;
+    //@ 加入置左 / 置中 / 置右選項
+    //
+    width: $wrap-width;
+    height: $wrap-height;
+    @if ($align=="left") {
+        $align: left;
+        //$pd-left: 0;
+        padding: $pd-top 0 0 0;
+    }
+    @else if ($align=="right") {
+        $align: right;
+        padding: $pd-top 0 0 $pd-left*2;
+    }
+    @else {
+        $align: center;
+        padding: $pd-top 0 0 $pd-left;
+    }
+    text-align: $align;
+    &:before {
+        background-size: auto $height;
+        background-position: 0 - ($index - 1)*$height 0;
+        width: $icon-real-width;
+        height: $height;
+    }
+}
+
+//Process line
+@mixin linepoint($col) {
+    &:before{
+        content: "";
+        top: -12px;
+        left: -5%;
+        position:absolute;
+        width: 20px;
+        height: 20px;
+        border: 6px solid $col;
+        border-radius: 10px;
+        background: #fff;
+        }
+}

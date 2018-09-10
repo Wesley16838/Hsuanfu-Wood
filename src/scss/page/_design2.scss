@@ -1,0 +1,317 @@
+
+.designPage2{
+    font-family: Regularfont;
+    //background-position: 0% -180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 265px;
+    z-index: 10;
+    position: relative;
+    &:after{
+        content: "";
+        display: block;
+        background-image: url("../../images/design/tria.svg");
+        background-size: 105% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 105%;
+        height: 20vw;
+        position: absolute;
+        left: -4px;
+        bottom: -2px;
+        @include breakpoint($md){
+            left: 0px;
+            bottom:-2px;
+        }
+    }
+    @include breakpoint($sm) {
+       height:40vw;
+   }
+}
+
+.design2-image{
+    display: block;
+    img{
+        width: 100%;
+        @include breakpoint($md){
+            width: 70%;
+            margin: 0 15%;
+        }
+    }
+    @include breakpoint($lg){
+        display: none;
+    }
+}
+
+.design2-content{
+    font-family: Regularfont;
+    display: block;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include breakpoint($lg){
+        display: none;
+    }
+    h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    }
+    p{
+    font-size: 15px;
+    }
+}
+
+.linearGradient{
+   position:relative;
+   height:50%;
+   background: linear-gradient(black, transparent);
+   z-index: 20;
+   @include breakpoint(0 $sm - 1) {
+       padding-top: $headerHeightMobile;
+   }
+   @include breakpoint($sm) {
+       padding-top: $headerHeightMobile;
+   }
+
+   @include breakpoint($md) {
+       padding-top: $headerHeightTablet;
+   }
+   @include breakpoint($lg) {
+       padding-top: $headerHeightTablet;
+   }
+   @include breakpoint($xl) {
+       padding-top: $headerHeightDesktop;
+   }
+   @include breakpoint($xxl) {
+       padding-top: $headerHeightLarge;
+   }
+}
+
+.design-padding{
+    height: 200px;
+    padding-left: 6%;
+}
+.design2-article{
+    font-family: Regularfont;
+    position: relative;
+    z-index: 10;
+    transform: translateY(-6vw);
+
+        h2{
+            font-size: 26px;
+            @include breakpoint($md){
+                font-size: 60px;
+            }
+        }
+        p{
+            font-size: 15px;
+            @include breakpoint($md){
+                font-size: 36px;
+            }
+        }
+        
+        img{
+            display: none;
+            width: 100%; 
+            height: auto;
+            @include breakpoint($lg){
+                display: inline-block;
+            }
+        }
+
+    .title{
+        height:150px;
+        margin-left:6%;
+    }
+    .right{
+        display:block;
+        padding-top:10%;
+        padding-bottom:5%;
+}
+}
+
+.bigbox{
+    font-family: Regularfont;
+    display: none;
+    justify-content: flex-start;
+    align-items:center;
+    padding-right: 40px;
+    @include breakpoint($lg){
+        display: flex;
+    }
+        .box{
+            width:600px;
+            h2{
+                font-size: 26px;
+                @include breakpoint($md){
+                    font-size: 36px;
+                }
+            }
+            p{
+                font-size: 15px;
+                @include breakpoint($md){
+                    font-size: 16px;
+                }
+            }
+    }
+}
+
+.design2-section{
+    font-family: Regularfont;
+width:100%;
+text-align: center;
+margin: auto;
+
+@include breakpoint($md){
+    margin-bottom: 200px;
+}
+
+    h2{
+        margin: 70px auto 50px auto;
+        font-size:20px;
+        text-align: center;
+        @include breakpoint($md){
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+    }
+    .detail{
+        width:70%;
+        display: none;
+       
+        @include breakpoint($md){
+            display: inline;
+        }
+
+        @include breakpoint($xxl){
+            width:1400px;
+        }
+        .sec{
+         width:13%;
+         height:420px;
+         display: inline-block;
+         vertical-align: top;
+         text-align: center;
+         position: relative;
+         &:nth-child(2n){
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+            .no{
+                font-size: 120px;
+            }
+            h2{
+
+                font-size: 20px;
+            }
+            img{
+                
+                width:90px;
+                height:auto;
+                padding-top: 30px;
+            }
+          .img{
+            padding-top:80px;
+          }
+        }
+
+    }
+
+    .condition{
+
+        bottom: -120px;
+        position: absolute; 
+        @include breakpoint($xl){
+            left: 30px;
+        }
+        ul{
+            list-style-type: none;
+            width: 20vh;
+        }
+    }
+
+    li{
+        text-align: left;
+        padding-left: 40px;
+        position: relative;
+        &:before {
+            content: "-";
+            display: block;
+            position: absolute;
+            left:15%;
+            bottom:10%;
+        }
+    }
+}
+
+.design2-section-rwd{
+    font-family: Regularfont;
+display: block;
+width:80%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+
+@include breakpoint($md){
+    display: none;
+}
+    .rwd-detail{
+    width:33.3%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    &:nth-child(3n){
+        display: block;
+        padding-left: 30px;
+        h4{
+            text-align:left;
+        }
+        .condition{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        li{
+            padding-left: 0px;
+            &:before {
+                content: "-";
+                display: block;
+                position: absolute;
+                left:-15%;
+                bottom:10%;
+            }
+        }
+    }
+        li{
+            text-align: left;
+            padding-left: 40px;
+            position: relative;
+            &:before {
+                content: "-";
+                display: block;
+                position: absolute;
+                left:15%;
+                bottom:10%;
+            }
+        }
+        .no{
+            font-size: 36px;
+            padding-bottom:20%;
+        }
+        h4{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
+        .furniture{
+        width:100%;
+        }
+    }
+
+}   

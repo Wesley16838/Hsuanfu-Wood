@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 126.005 101.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-miterlimit: 10;
+        stroke-width: 1.75px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1147" data-name="Group 1147" transform="translate(-1.125 -1.125)">
+    <g id="Group_1144" data-name="Group 1144" transform="translate(11.685 2)">
+      <path id="Path_12646" data-name="Path 12646" class="cls-1" d="M57.491,59.3v52.566H13.7V59.3" transform="translate(-13.7 -11.866)"/>
+      <path id="Path_12647" data-name="Path 12647" class="cls-1" d="M13.7,21.95V2H57.491V21.95" transform="translate(-13.7 -2)"/>
+      <g id="Group_1143" data-name="Group 1143">
+        <path id="Path_12648" data-name="Path 12648" class="cls-1" d="M45.038,59.3V89.35c0,14.983-1.738,22.517-1.738,22.517" transform="translate(-18.797 -11.866)"/>
+        <path id="Path_12649" data-name="Path 12649" class="cls-1" d="M45.4,2h0V21.95" transform="translate(-19.158 -2)"/>
+        <path id="Path_12650" data-name="Path 12650" class="cls-1" d="M33.819,59.3V88.522c0,8.278-1.9,17.881-4.719,23.344" transform="translate(-16.352 -11.866)"/>
+        <path id="Path_12651" data-name="Path 12651" class="cls-1" d="M34.8,2h0V21.95" transform="translate(-17.333 -2)"/>
+        <path id="Path_12652" data-name="Path 12652" class="cls-1" d="M24.3,21.95V2h0" transform="translate(-15.525 -2)"/>
+        <path id="Path_12653" data-name="Path 12653" class="cls-1" d="M13.7,111.866c6.705-8.444,8.775-21.192,8.775-31.871V59.3" transform="translate(-13.7 -11.866)"/>
+        <path id="Path_12654" data-name="Path 12654" class="cls-1" d="M56,114.879v-5.05c0-14.238,3.56-26.573,8.775-33.03" transform="translate(-20.983 -14.879)"/>
+        <path id="Path_12655" data-name="Path 12655" class="cls-1" d="M56,21.95V2" transform="translate(-20.983 -2)"/>
+        <path id="Path_12656" data-name="Path 12656" class="cls-1" d="M64.775,61.038C60.967,64.35,57.159,68.158,56,71.055V59.3" transform="translate(-20.983 -11.866)"/>
+      </g>
+    </g>
+    <line id="Line_423" data-name="Line 423" class="cls-1" x2="76.656" transform="translate(9.036 27.745)"/>
+    <line id="Line_424" data-name="Line 424" class="cls-1" x1="58.444" transform="translate(9.036 43.639)"/>
+    <path id="Path_12657" data-name="Path 12657" class="cls-1" d="M9.036,37.487V33.1H2V48.994H9.036V44.607a3.56,3.56,0,1,0,0-7.119Z" transform="translate(0 -5.355)"/>
+    <g id="Group_1145" data-name="Group 1145" transform="translate(17.48 33.209)">
+      <line id="Line_425" data-name="Line 425" class="cls-1" y1="6.374" transform="translate(0 4.056)"/>
+      <line id="Line_426" data-name="Line 426" class="cls-1" y1="6.374" transform="translate(8.444 4.056)"/>
+      <line id="Line_427" data-name="Line 427" class="cls-1" y1="6.374" transform="translate(16.887 4.056)"/>
+      <line id="Line_428" data-name="Line 428" class="cls-1" y1="10.43" transform="translate(25.331)"/>
+      <line id="Line_429" data-name="Line 429" class="cls-1" y1="6.374" transform="translate(33.775 4.056)"/>
+      <line id="Line_430" data-name="Line 430" class="cls-1" y1="6.374" transform="translate(42.219 4.056)"/>
+      <line id="Line_431" data-name="Line 431" class="cls-1" y1="5.712" transform="translate(50.579 4.056)"/>
+      <line id="Line_432" data-name="Line 432" class="cls-1" y1="5.381" transform="translate(59.023 4.056)"/>
+      <line id="Line_433" data-name="Line 433" class="cls-1" y1="10.43" transform="translate(67.467)"/>
+    </g>
+    <path id="Path_12658" data-name="Path 12658" class="cls-1" d="M105.373,80.524V71.17c-6.623-1.49-8.609-3.974-10.6-7.45s-4.8-6.54-10.762-6.54c-5.712,0-5.629-10.265,0-10.265,5.132,0,10.348.414,14.4,5.795V35.326a6.112,6.112,0,0,1,6.126-6.126h28.974a6.112,6.112,0,0,1,6.126,6.126V63.637c0,4.056-4.056,7.45-7.036,7.45v9.354" transform="translate(-13.39 -4.683)"/>
+    <g id="Group_1146" data-name="Group 1146" transform="translate(95.295 24.517)">
+      <line id="Line_434" data-name="Line 434" class="cls-1" y1="9.52"/>
+      <line id="Line_435" data-name="Line 435" class="cls-1" y1="9.52" transform="translate(10.348)"/>
+      <line id="Line_436" data-name="Line 436" class="cls-1" y1="9.52" transform="translate(20.695)"/>
+    </g>
+  </g>
+</svg>

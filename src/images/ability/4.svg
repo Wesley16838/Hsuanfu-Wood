@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.188 84.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #333;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 2.632px;
+      }
+    </style>
+  </defs>
+  <g id="_x31_5_1_" transform="translate(0.016 0.016)">
+    <line id="Line_480" data-name="Line 480" class="cls-1" x2="20.63" transform="translate(42.801 23.016)"/>
+    <line id="Line_481" data-name="Line 481" class="cls-1" x2="7.601" transform="translate(26.394 23.016)"/>
+    <line id="Line_482" data-name="Line 482" class="cls-1" x2="30.04" transform="translate(26.394 33.874)"/>
+    <line id="Line_483" data-name="Line 483" class="cls-1" x2="8.083" transform="translate(38.096 44.852)"/>
+    <line id="Line_484" data-name="Line 484" class="cls-1" x2="3.74" transform="translate(26.394 44.852)"/>
+    <line id="Line_485" data-name="Line 485" class="cls-1" x2="19.786" transform="translate(26.394 55.831)"/>
+    <path id="Path_13071" data-name="Path 13071" class="cls-1" d="M22.1,39" transform="translate(4.294 7.783)"/>
+    <path id="Path_13072" data-name="Path 13072" class="cls-1" d="M51.9,1.3" transform="translate(10.446)"/>
+    <path id="Path_13073" data-name="Path 13073" class="cls-1" d="M12.8,68.136V1.3H59.972L74.811,16.139v4.343" transform="translate(2.374)"/>
+    <path id="Path_13074" data-name="Path 13074" class="cls-1" d="M74.811,39V61.56A14,14,0,0,1,60.816,75.555H12.8" transform="translate(2.374 7.783)"/>
+    <path id="Path_13075" data-name="Path 13075" class="cls-1" d="M61.019,66.145a13.21,13.21,0,0,1-2.775-8.2V57.7H1.3v.241A13.7,13.7,0,0,0,14.933,71.574H61.26" transform="translate(0 11.643)"/>
+    <path id="Path_13076" data-name="Path 13076" class="cls-1" d="M51.9,2.6V15.871H64.568" transform="translate(10.446 0.268)"/>
+    <path id="Path_13077" data-name="Path 13077" class="cls-1" d="M53.273,49.277l-5.55,1.689L47,50.242l1.689-5.55L77.161,16.1l4.705,4.584Z" transform="translate(9.434 3.055)"/>
+    <line id="Line_486" data-name="Line 486" class="cls-1" x1="2.172" y2="2.172" transform="translate(54.624 53.659)"/>
+    <line id="Line_487" data-name="Line 487" class="cls-1" x1="7.48" y2="7.48" transform="translate(83.699 30.978)"/>
+    <line id="Line_488" data-name="Line 488" class="cls-1" x2="4.705" y2="4.584" transform="translate(82.976 22.775)"/>
+  </g>
+</svg>

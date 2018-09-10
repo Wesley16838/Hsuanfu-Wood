@@ -1,0 +1,430 @@
+.contact{
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint($md){
+        background-position: center;
+        background-size: cover;
+    }
+   
+}
+
+
+.contactlanguage{
+    font-family:$font-family;
+    width:65px;
+    float:right;
+    font-size: 10px;
+    position: fixed;
+    right:0px;
+    height:55px;
+    transition: height .3s ease,background-size .3s ease;
+    color:#333333;
+    z-index: 360;
+    .text{
+        color:#333333;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    @include breakpoint($sm) {
+        font-size: 16px;
+        right:15px;
+        height:55px;
+    }
+    @include breakpoint($md) {
+        right:32px;
+        height: 100px;
+        background-position: left center;
+        background-size: auto 50%;
+        &.fixed {
+            height:100px;
+        }
+        // width: 339px;
+    }
+    @include breakpoint($lg) {
+        right:32px;
+        height: 100px;
+        background-position: left center;
+        background-size: auto 50%;
+        &.fixed {
+            height:70px;
+        }
+        // width: 339px;
+    }
+    @include breakpoint($xl) {
+        // right:64px;
+        height: 100px;
+        right:64px;
+        background-position: left center;
+        background-size: auto 50%;
+        &.fixed {
+            height: 70px;
+        }
+      
+    }
+    @include breakpoint($xxl) {
+        height: 100px;
+        right:64px;
+        &.fixed {
+            height: 70px;
+        }
+        //background-size: auto 64%;
+    }
+}
+
+.error {color: #FF0000;}
+
+.forminfo{
+    font-family: Regularfont;
+    padding-top:160px;
+    width:100%;
+    text-align: center;
+    margin:auto;
+    @include breakpoint($sm){
+        width:560px;
+    }
+   
+    h2{
+        font-size:20px;
+        @include breakpoint($md){
+            font-size: 60px;
+        }
+    }
+    p{
+        margin-top: 10px;
+        font-size: 16px;
+        &:nth-of-type(2){
+            color:#BCBCBC;
+        }
+    }
+}
+
+form{
+    
+    font-family: Regularfont;
+    width:100%;
+    margin:auto;
+    padding-top: 80px;
+    @include breakpoint($lg){
+        width:800px;
+        font-size: 16px;
+    }
+    ::placeholder {
+        color: #BCBCBC;
+        
+    }
+   
+    .formlabel{
+        width: 100%;
+        float: left;
+        text-align: left;
+        height: 2.5rem;
+        display: flex;
+        align-items: center;
+        @include breakpoint(450px){
+            width: 25%;
+        }
+        @include breakpoint($sm){
+            width: 15%;
+            &.name{
+                margin-left: 10%;
+            }
+            &.phone{
+                margin-left: 10%;
+            }
+        }
+        @include breakpoint($lg){
+            width: 100px;
+            &.name{
+                margin-left: 100px;
+            }
+            &.phone{
+                margin-left: 100px;
+            }
+        }
+        
+    }
+    .forminput_short{
+        
+        background-color:rgba(255, 255, 255, .5);
+        width:100%;
+        float:left;
+        text-align: left;
+        @include breakpoint(450px){
+            width:75%;
+        }
+        @include breakpoint($sm){
+            width:30%;
+        }
+        @include breakpoint($lg){
+            width:250px;
+        }
+    }
+    .forminput_long{
+        
+        background-color:rgba(255, 255, 255, .5);
+        width:100%;
+        float:left;
+        text-align: left;
+        @include breakpoint(450px){
+            width:85%;
+        }
+        @include breakpoint($lg){
+            width:700px;
+        }
+    }
+    .marginleft{
+        margin-left: 0;
+        @include breakpoint(450px){
+           
+                margin-left: 25%;
+         
+        }
+        @include breakpoint($sm){
+           
+                margin-left: 0;
+            
+        }
+    }
+    .forminput_address_short{
+      
+        background-color:rgba(255, 255, 255, .5);
+        width:100%;
+        float:left;
+        text-align: left;
+       
+        @include breakpoint(450px){
+            width:75%;
+            &:nth-child(3){
+                margin-left: 25%;
+            }
+        }
+        @include breakpoint($sm){
+            width:42.5%;
+            &:nth-child(3){
+                margin-left: 0%;
+            }
+        }
+        @include breakpoint($lg){
+            width:100px;
+        }
+    }
+    .forminput_address_long{
+     
+        background-color:rgba(255, 255, 255, .5);
+        width:100%;
+        float:left;
+        text-align: left;
+        @include breakpoint(450px){
+            width:75%;
+            margin-left: 25%;
+        }
+        @include breakpoint($sm){
+            width:85%;
+            margin-left: 15%;
+        }
+        @include breakpoint($lg){
+            width:500px;
+            margin-left: 0;
+        }
+    }
+   .forminput_email{
+ 
+    background-color:rgba(255, 255, 255, .5);
+    width:100%;
+    float:left;
+    text-align: left; 
+    @include breakpoint(450px){
+        width:75%;
+    }
+    @include breakpoint($sm){
+        width:85%;
+    }
+    @include breakpoint($lg){
+        width:700px;
+    }
+
+   }
+    .form-control{
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    .col-form-label {
+        padding-top: calc(.375rem + 1px);
+        padding-bottom: calc(.375rem + 1px);
+        margin-bottom: 0;
+        font-size: inherit;
+        line-height: 1.5;
+    }
+    select {
+        background-color:rgba(255, 255, 255, .5);
+        margin-bottom: 20px;
+        
+        height: 2.5rem;
+        padding-left: 12px;
+       
+        border-bottom: 1.5px solid #333333;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+    }
+    input[type=text]{
+        background-color:rgba(255, 255, 255, .5);
+        margin-bottom: 20px;
+       
+        height: 2.5rem;
+        padding-left: 12px;
+       
+        border-bottom: 1.5px solid #333333;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        .address{
+            padding-bottom: 0px;
+            margin-left: -4px;
+        }
+
+    }
+    textarea{
+      
+        border-bottom: 1.5px solid rgba(51, 51, 51, .7); 
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        vertical-align: top;
+        margin-bottom: 65px;
+    }
+    .robot-section{
+        
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        float: left;
+        margin-bottom: 50px;
+        @include breakpoint($lg){
+             width:400px;
+        }
+        .robot{
+           
+            width: 300px; 
+            height: 75px;
+        }
+    }
+    .formbutton{
+        display: inline-block;
+        
+        margin-bottom: 150px;
+        text-align: left;
+        width: 100%;
+        @include breakpoint(450px) {
+            padding-left: 0%;
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 150px;
+
+          
+        }
+        @include breakpoint($sm) {
+            
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 150px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        @include breakpoint($lg){
+            display: inline-block;
+            padding-left: 35px;
+            width: 400px;
+            text-align: right;
+        }
+        a{
+            background-color: transparent;
+            color: #333;
+            font-size: 15px;
+            border: 2px #000 solid;
+            border-radius: 50px;
+            text-align: center;
+            height: 50px;
+            padding: 12px 30px;
+            width: 100%;
+           margin-bottom: 15px;
+            display: inline-block;
+            transition: .3s ease-out;
+            &:hover{
+                color:rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                img{
+                    transform: translateX(15px);
+                }
+            }
+           
+            @include breakpoint($sm) {
+                width: 150px;
+                
+                margin-bottom: 0px;
+                padding: 13px 30px;
+                font-size: 16px;
+             
+            }
+            @include breakpoint($lg){
+                margin-right: 0px;
+                margin-left: 25px;
+            }
+        }
+    }
+    
+   
+
+   
+}
+
+.info{
+    font-family: Regularfont;
+
+    margin-bottom: 200px;
+    @include breakpoint($sm){
+        padding-left: 15%;
+    }
+    // @include breakpoint($lg){
+    //     padding-left: 15%;
+    // }
+    h2{
+        color:#9A5A11;
+       
+        &:nth-child(1){
+            font-size: 20px;
+        }
+        &:nth-child(2){
+            font-size: 20px;
+            margin-bottom: 30px;
+            @include breakpoint($md){
+                font-size: 36px;
+            }
+        }
+    }
+    p{
+        color:#333333;
+        
+    }
+}
+
+.address{
+    font-family: Regularfont;
+    padding-bottom: 0px;
+    vertical-align: top;
+}

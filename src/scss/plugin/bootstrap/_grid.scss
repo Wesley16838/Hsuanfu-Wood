@@ -1,0 +1,66 @@
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+@if $enable-grid-classes {
+    .container,
+    .wrap {
+        @include make-container();
+        @include make-container-max-widths();
+        @include breakpoint(0 $sm - 1) {
+            //@john
+            // width: 100%;
+            // padding-left: 25px;
+            // padding-right: 25px;
+        }
+    }
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+@if $enable-grid-classes {
+    .container-fluid,
+    .wrap-fs {
+        //@include make-container();
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+@if $enable-grid-classes {
+    .row {
+        @include make-row();
+    }
+    // Remove the negative margin from default .row, then the horizontal padding
+    // from all immediate children columns (to prevent runaway style inheritance).
+    .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+        >.col,
+        >[class*="col-"] {
+            padding-right: 0;
+            padding-left: 0;
+            &.mobile-pd {
+                padding-right: 6%;
+                padding-left: 6%;
+            }
+        }
+        .mobile-pd,
+        &.mobile-pd {
+            padding-right: 6%;
+            padding-left: 6%;
+        }
+    }
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+@if $enable-grid-classes {
+    @include make-grid-columns();
+}

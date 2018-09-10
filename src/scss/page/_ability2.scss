@@ -1,0 +1,401 @@
+.abilityPage2{
+    font-family: Regularfont;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 265px;
+    z-index: 10;
+    position: relative;
+    .abilitytitle{
+        position: relative;
+        z-index: 25;
+        transform: translateY(-29vw);
+        padding-left: 14vw;
+        display: none;
+     
+        @include breakpoint($xl){
+            display:block;
+            position: relative;
+            z-index: 25;
+            transform: translateY(-29vw);
+            padding-left: 4vw;
+        }
+        @include breakpoint($xxl){
+            position: relative;
+            z-index: 25;
+            // transform: translateY(-25vw);
+            padding-left: 14vw;
+        }
+    }
+    h2{
+        &:nth-child(1){
+        color:rgba(255,255,255,.3);
+        font-size: 30px;
+        @include breakpoint($xl){
+            font-size: 30px;
+        }
+        @include breakpoint($xxl){
+            font-size: 45px;
+        }
+        }
+        &:nth-child(2){
+        color: #fff;
+        font-size: 45px;
+        @include breakpoint($xl){
+            font-size: 36px;
+        }
+        @include breakpoint($xl){
+            font-size: 60px;
+        }
+        }
+    }
+    p{
+        width:500px;
+        color: #fff;
+        font-size: 15px;
+        @include breakpoint($xxl){
+            font-size: 16px;
+        }
+    }
+    &:after{
+        content: "";
+        display: block;
+        background-image: url("../../images/ability/abilitywhite.svg");
+        background-size: 101% auto;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        width: 105%;
+        height: 21vw;
+        position: absolute;
+        left: -8px;
+        bottom: -1px;
+        @include breakpoint($md){
+            left: 0px;
+            bottom:-2px;
+        }
+    }
+    @include breakpoint($sm) {
+        height:50vw;
+    }
+}
+
+.ability2Article{
+    font-family: Regularfont;
+    background-color: #FFF;
+    width:100%;
+    display: block;
+    @include breakpoint($xxl) {
+        display: none;
+    }
+    .ability2Article_section{
+        display: block;
+        width: 76%;
+        float: none;
+        margin: 0px AUTO 30px auto;
+        
+        h2{
+            &:nth-child(1){
+            color:rgba(0,0,0,.3);
+            font-size: 20px;
+                @include breakpoint($xl){
+                    font-size: 45px;
+                }
+    
+            }
+            &:nth-child(2){
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+                @include breakpoint($xl){
+                    font-size: 60px;
+                }
+            }
+        }
+        p{
+            
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+        }
+        @include breakpoint($xxl) {
+            display: none;
+        }
+    }
+}
+
+.step{
+    display: block;
+    font-family: Regularfont;
+    @include breakpoint($lg) {
+        
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        }
+    .stepsec{
+        background: #1d1f20;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 300px;
+        transition: .5s ease;
+        border: 0;
+        float: left;
+        &:nth-child(1){
+            background-color: rgba(195,205,216,.1);
+            }
+        &:nth-child(4){
+            background-color:rgba(195,205,216,.1);
+            }
+        
+        &:nth-child(2){
+            background-color: rgba(195,205,216,.2);
+            }
+        &:nth-child(3){
+            background-color:rgba(195,205,216,.2);
+            }
+        
+        @include breakpoint($lg) { 
+        width: 350px;
+        height: 350px;
+        transition: .5s ease;
+        border:none;
+        &:nth-child(2n){
+            background-color: rgba(195,205,216,.1);
+            }
+        &:nth-child(2n+1){
+            background-color:rgba(195,205,216,.2);
+            }
+        }
+       
+        .sec{
+            display: block;
+            text-align: center;
+            transition: .5s ease;
+            h2{
+                font-size: 30px;
+                @include breakpoint($lg) {
+                    font-size: 36px;
+                    
+                    }    
+            }
+        }
+        .num{
+            font-size: 60px;
+            @include breakpoint($lg) {
+                font-size: 100px;
+                
+                }
+        }
+    }
+}
+
+
+.overlay {
+    font-family: Regularfont;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+@keyframes example {
+            0%   {width: 0; height: 0;border-top: 0 solid #9A5A11;border-right: 0 solid #9A5A11;}
+            
+            50%  {width: 100%;height: 1px;border-top: 3px solid #9A5A11;border-right: 1px solid #9A5A11;}
+            
+            100% {width: 100%;height: 100%;border-top: 3px solid #9A5A11;border-right: 3px solid #9A5A11;}
+        }
+        @keyframes example1 {
+            0%   {width: 0; height: 0;border-bottom: 0 solid #9A5A11;border-left: 0 solid #9A5A11;}
+            
+            50%  {width: 100%;height: 1px;border-bottom: 3px solid #9A5A11;border-left: 1px solid #9A5A11;}
+            
+            100% {width: 100%;height: 100%;border-bottom: 3px solid #9A5A11;border-left: 3px solid #9A5A11;}
+        }
+.stepsec{ 
+    font-family: Regularfont;
+    &:before {
+        content:'';
+        display: block;
+     position: absolute;
+     top: 2px;left: 0;
+     width: 1px;height: 1px;
+     transform-origin: left top;
+     border-top: 1px solid transparent;
+     border-right: 1px solid transparent;
+    }
+    &:after {
+        content:'';
+        display: block;
+     position: absolute;
+     bottom: -2px;right: 0;
+     width: 1px;height: 1px;
+     transform-origin: right bottom;
+     border-bottom: 1px solid transparent;
+     border-left: 1px solid transparent;
+    }
+    &:hover {
+       &:before {
+            animation-name: example; // 動畫腳本名稱
+        animation-duration: .75s; // 動畫執行時間
+        // animation-delay: 0; // 動畫delay時間
+        animation-iteration-count: 1; // 動畫執行次數
+        animation-fill-mode:forwards;
+       
+       }
+       &:after {
+        animation-name: example1; // 動畫腳本名稱
+        animation-duration: .75s; // 動畫執行時間
+        // animation-delay: .5s; // 動畫delay時間
+        animation-iteration-count: 1; // 動畫執行次數
+        animation-fill-mode:forwards;
+        
+       }
+        
+        
+        
+        .overlay{
+            opacity: 1;
+        }
+    
+        .sec{
+            opacity: 0;
+        }
+    }
+  
+}
+
+.text {
+    font-family: Regularfont;
+    text-align: center;
+    h2{
+        font-size: 36px;
+        margin-bottom: 45px;
+        font-weight:500;
+    }
+    ul {
+        list-style-type: none; 
+        position: relative;
+        text-align: left;
+        margin: auto;
+        width:80%;
+        li{
+            &:before{
+                content: "-";
+                display: block;
+                position: absolute;
+                left: -5%;
+   
+            }
+        }
+    }
+
+}
+
+.certificate{
+    font-family: Regularfont;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgba(226,148,49,.05), #FFFFFF);
+   
+    @include breakpoint($lg) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 135px;
+        height:550px;
+        
+        }
+    h2{
+        text-align: center;
+        font-size: 36px;
+        padding-top: 80px;
+        @include breakpoint($lg) {  
+            padding-top: 0px;
+                }
+    }
+    .certificatesec{
+      
+        width: 100%;
+        font-size: 0;
+        @include breakpoint($lg) {  
+        width: 1050px;
+            }
+        .certificatedetail{
+            width: 50%;
+            display: inline-block;
+            height: auto;
+            font-size: 3rem;
+            margin: 0 0 25px 0;
+            padding: 25px;
+            text-align: center;
+            vertical-align: top;
+            @include breakpoint($lg) {  
+                width: 33.33%;
+                text-align: unset;
+                    }
+            .number{
+                font-size: 36px;
+                color: #9A5A11;
+                @include breakpoint($lg) {  
+                    font-size: 60px;
+                        }
+            }
+            p{
+                font-size: 16px;
+                &:before{
+                    content: "-";
+                    display: inline-block;
+                   
+                   
+                }
+            }
+        }
+    }
+}
+
+
+.sheet{
+    font-family: Regularfont;
+    text-align: center;
+    color:rgba(51,51,51,.3);
+    // margin-bottom: 120px;
+    img{
+
+        width:100%;
+    }
+    &:nth-child(1){
+        img{
+            padding-top: 84px;
+        }
+    }
+    &:nth-child(2){
+        img{
+            padding-top: 31px;
+        }
+    }
+    &:nth-child(3){
+        img{
+            padding-top: 128px;
+        }
+    }
+    &:nth-child(4){
+        img{
+            padding-top: 73px;
+        }
+    }
+    
+}
+.marginbottom{
+    margin-bottom: 120px;
+}
+

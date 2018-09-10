@@ -1,0 +1,54 @@
+/* line 4, /Users/jonasvonandrian/jquery-sortable/source/css/jquery-sortable.css.sass */
+
+
+/*甈�雿齿筑���*/
+
+.dragged {
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+
+/* line 94, /Users/jonasvonandrian/jquery-sortable/source/css/application.css.sass */
+
+
+/*tr甈�雿�*/
+
+.sorted_table tr {
+    cursor: pointer;
+}
+
+
+/* line 96, /Users/jonasvonandrian/jquery-sortable/source/css/application.css.sass */
+
+
+/*撌血�渡悌��*/
+
+.sorted_table tr.placeholder {
+    display: block;
+    background: red;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+/* line 103, /Users/jonasvonandrian/jquery-sortable/source/css/application.css.sass */
+
+
+/*撌血�渡悌��*/
+
+.sorted_table tr.placeholder:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-left-color: red;
+    margin-top: 0;
+    left: -1px;
+    border-right: none;
+}

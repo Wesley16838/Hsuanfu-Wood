@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 109.021 109.42">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-7 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4, .cls-6, .cls-7 {
+        stroke: #333;
+      }
+
+      .cls-2, .cls-6 {
+        stroke-width: 1.75px;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        stroke-width: 3px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-6 {
+        fill: #fff;
+      }
+
+      .cls-7 {
+        stroke-width: 1.25px;
+      }
+
+      .cls-8 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="67" height="2"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect class="cls-1" width="57" height="2"/>
+    </clipPath>
+  </defs>
+  <g id="Group_1153" data-name="Group 1153" transform="translate(-715 -2100)">
+    <g id="Rectangle_2713" data-name="Rectangle 2713" class="cls-2" transform="translate(715 2100)">
+      <rect class="cls-8" width="84" height="90"/>
+      <rect class="cls-1" x="0.875" y="0.875" width="82.25" height="88.25"/>
+    </g>
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" class="cls-3" transform="translate(725.5 2123)">
+      <g transform="translate(-725.5 -2123.5)">
+        <line id="Line_442" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-713.5 -2123.5)">
+        <line id="Line_442-2" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-701.5 -2123.5)">
+        <line id="Line_442-3" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-689.5 -2123.5)">
+        <line id="Line_442-4" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-677.5 -2123.5)">
+        <line id="Line_442-5" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-665.5 -2123.5)">
+        <line id="Line_442-6" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_2" data-name="Repeat Grid 2" class="cls-3" transform="translate(741 2108.5) rotate(90)">
+      <g transform="translate(-725.5 -2123.5)">
+        <line id="Line_442-7" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-713.5 -2123.5)">
+        <line id="Line_442-8" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-701.5 -2123.5)">
+        <line id="Line_442-9" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-689.5 -2123.5)">
+        <line id="Line_442-10" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-677.5 -2123.5)">
+        <line id="Line_442-11" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-665.5 -2123.5)">
+        <line id="Line_442-12" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+    </g>
+    <g id="Repeat_Grid_3" data-name="Repeat Grid 3" class="cls-5" transform="translate(765 2108.5) rotate(90)">
+      <g transform="translate(-725.5 -2123.5)">
+        <line id="Line_442-13" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-713.5 -2123.5)">
+        <line id="Line_442-14" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-701.5 -2123.5)">
+        <line id="Line_442-15" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-689.5 -2123.5)">
+        <line id="Line_442-16" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+      <g transform="translate(-677.5 -2123.5)">
+        <line id="Line_442-17" data-name="Line 442" class="cls-4" x2="6" transform="translate(725.5 2123.5)"/>
+      </g>
+    </g>
+    <g id="Rectangle_2714" data-name="Rectangle 2714" class="cls-6" transform="matrix(0.883, -0.469, 0.469, 0.883, 724.627, 2193.527)">
+      <rect class="cls-8" width="103" height="18"/>
+      <rect class="cls-1" x="0.875" y="0.875" width="101.25" height="16.25"/>
+    </g>
+    <g id="Group_1152" data-name="Group 1152" transform="translate(5 -1)">
+      <line id="Line_443" data-name="Line 443" class="cls-7" y2="8" transform="matrix(0.883, -0.469, 0.469, 0.883, 726.087, 2192.456)"/>
+      <line id="Line_449" data-name="Line 449" class="cls-7" y2="8" transform="matrix(0.883, -0.469, 0.469, 0.883, 748.161, 2180.719)"/>
+      <line id="Line_455" data-name="Line 455" class="cls-7" y2="8" transform="matrix(0.883, -0.469, 0.469, 0.883, 770.234, 2168.983)"/>
+      <line id="Line_456" data-name="Line 456" class="cls-7" y2="8" transform="matrix(0.883, -0.469, 0.469, 0.883, 792.308, 2157.246)"/>
+      <line id="Line_444" data-name="Line 444" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 730.502, 2190.109)"/>
+      <line id="Line_451" data-name="Line 451" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 752.575, 2178.372)"/>
+      <line id="Line_457" data-name="Line 457" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 774.649, 2166.635)"/>
+      <line id="Line_461" data-name="Line 461" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 796.723, 2154.898)"/>
+      <line id="Line_445" data-name="Line 445" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 734.916, 2187.761)"/>
+      <line id="Line_452" data-name="Line 452" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 756.99, 2176.025)"/>
+      <line id="Line_458" data-name="Line 458" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 779.064, 2164.288)"/>
+      <line id="Line_462" data-name="Line 462" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 801.137, 2152.551)"/>
+      <line id="Line_446" data-name="Line 446" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 739.331, 2185.414)"/>
+      <line id="Line_453" data-name="Line 453" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 761.405, 2173.677)"/>
+      <line id="Line_459" data-name="Line 459" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 783.478, 2161.941)"/>
+      <line id="Line_463" data-name="Line 463" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 805.552, 2150.204)"/>
+      <line id="Line_447" data-name="Line 447" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 743.746, 2183.067)"/>
+      <line id="Line_454" data-name="Line 454" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 765.819, 2171.33)"/>
+      <line id="Line_460" data-name="Line 460" class="cls-7" y2="5" transform="matrix(0.883, -0.469, 0.469, 0.883, 787.893, 2159.593)"/>
+    </g>
+  </g>
+</svg>

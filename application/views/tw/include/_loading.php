@@ -1,0 +1,1 @@
+<div class="load"><img src="../../../../assets/img/layout/loading.gif"></div>
